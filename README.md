@@ -17,14 +17,18 @@ What can you do with pip?
 pip vs. apt-get
 ----
 - - no update notifications
-- - other non-python packages don't know about them
+- - other non-python packages don't know about them 
 - - second package manager
 - + more packages available
 - + up-to-date packages
 - + easy to make your own package
 - + install via PyPI, http(s), ssh, git, GitHub, Mercurial, file
 - + make develope installation (softlink to the sources instead of copying)
-- + `virtualenv` for encapsulated installations
- - + only install necessary packages
- - + mix different package or python versions 
- - + create test environments
+
+virtualenv
+----
+`virtualenv` virtual environment
+- encapsulated from your default Python installation
+- only install necessary packages
+- mix different package or python versions 
+- create test environments
