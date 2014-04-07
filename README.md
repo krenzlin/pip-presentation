@@ -21,8 +21,8 @@ pip vs. apt-get
 - - second package manager
 - + more packages available
 - + up-to-date packages
-- + easy to make your own package
-- + install via PyPI, http(s), ssh, git, GitHub, Mercurial, file
+- + easy to create and install your own packages
+- + installs via http(s), ssh, git, GitHub, Mercurial, file
 - + make develope installation (softlink to the sources instead of copying)
 
 ways to install a package
