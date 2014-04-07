@@ -27,14 +27,14 @@ pip vs. apt-get
 
 ways to install a package
 ----
-`pip install <package>` installs from pypi.python.org (most of the packages are there)
-`pip install <package>==<version>` install a specific version of the packages
-- ! can conflict if newer version is/was installed -> use `virtualenv`
-`pip install <path/to/local/package>` installs a locally availabe Python package
+- `pip install <package>` installs from pypi.python.org (most of the packages are there)
+- `pip install <package>==<version>` install a specific version of the packages
+ - **can conflict if newer version is/was installed** -> use `virtualenv`
+- `pip install <path/to/local/package>` installs a locally availabe Python package
 - needs to be a package (setup.py)
 - can be in a tarball
-`pip install <package> -f <URL>` search on <URL> for a <package> tarball (supports versioning)
-`pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
+- `pip install <package> -f <URL>` search on <URL> for a <package> tarball (supports versioning)
+- `pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
 
 
 
