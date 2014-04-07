@@ -35,7 +35,9 @@ ways to install a package
 - can be in a tarball
 - `pip install <package> -f <URL>` search on <URL> for a <package> tarball (supports versioning)
 - `pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
-
+- 
+TODO: install from git via ssh,
+TODO via local repo - pip install git+file://test needs to have the folder, branches like repo@develop ??
 
 
 virtualenv
