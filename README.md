@@ -43,5 +43,6 @@ virtualenv
 `virtualenv` virtual environment
 - encapsulated from your default Python installation
 - only install necessary packages
-- mix different package or python versions 
+- mix different package or python versions and keep them separated
 - create test environments
+- no need for sudo
