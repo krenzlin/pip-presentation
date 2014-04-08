@@ -6,6 +6,7 @@ What is pip?
 * package manager for Python
 * "The PyPA recommended tool for installing Python packages"
 * comes with most distributions and from Python 3.4+
+* [docs](http://www.pip-installer.org/en/latest/)
 
 
 What can you do with pip?
@@ -14,6 +15,7 @@ What can you do with pip?
 * `pip uninstall <package>`
 * `pip search <term or package>`
 * `pip install -U/--upgrade <package>`
+* only pip 1.3+ `pip show <package>` 
 
 
 pip vs. apt-get
@@ -23,9 +25,9 @@ pip vs. apt-get
 - - second package manager
 - + more packages available
 - + up-to-date packages
-- + easy to create and install your own packages
-- + installs via http(s), ssh, git, GitHub, Mercurial, file
+- + easy to create and install your own packages (unlike a Debian package)
 - + make develope installation (softlink to the sources instead of copying)
+- + installs from various sources
 
 
 ways to install a package / pip is versatile
