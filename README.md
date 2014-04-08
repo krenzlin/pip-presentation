@@ -70,3 +70,8 @@ deployment with pip via git repositories
 - TODO
 - TODO: install from git via ssh,
 - TODO: via local repo - pip install git+file://test needs to have the folder, branches like repo@develop ??
+
+
+links
+----
+- http://xion.org.pl/2014/01/27/anathomy-of-a-python-package/
