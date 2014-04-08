@@ -54,7 +54,11 @@ virtualenv
 
 your own package
 ----
-- like normal imports can be any Python module, Extension (C/C++) module or even a script
+- can be
+ - single Python file 
+ - Python module
+ - Extension (C/C++)
+ - Python and Shell scripts
 - only needs a setup.py which describes your package (name and modules to incorporate)
 - can compile C/C++ Extensions on installation time
 - deal with your dependencies
