@@ -35,7 +35,7 @@ ways to install a package
 - `pip install packages` (default)
  - searches on pypi.python.org
 - specify version of package
- - `pip install package=0.2.1`
+ - `pip install package==0.2.1`
  - `pip install package<=0.2.0`
 - install a tarballed package from elsewhere
  - `pip install <path/to/tarball>` locally (can also be a folder)
