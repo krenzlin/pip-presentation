@@ -73,6 +73,8 @@ your own package
 - only needs a setup.py which describes your package (name and modules to incorporate)
 - can compile C/C++ Extensions on installation time
 - deal with your dependencies
+- (see):https://docs.python.org/2/distutils/examples.html
+- 
 
 deployment with pip via git repositories
 ----
