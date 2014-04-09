@@ -38,7 +38,7 @@ ways to install a package
  - `pip install package=0.2.1`
  - `pip install package<=0.2.0`
 - install a tarballed package from elsewhere
- - `pip install <path/to/tarball>` locally
+ - `pip install <path/to/tarball>` locally (can also be a folder)
  - `pip install http://<URL>` via http(s)
  - `pip install ssh://<URL>` .. or ssh
 - `pip install <package> -f <URL>` 
@@ -46,10 +46,13 @@ ways to install a package
  - supports versioning (e.g. `package-1.0.tar.gz`, `package-1.1.tar.gz`)
 
 
-problems
+piftalls
 ----
 - specifying version can conflict if **newer** version is/was installed -> use `virtualenv`
 - installing w/ tarballs only checks if version != installed_version -> can **downgrade**
+- when installing from a local folder keep in mind
+ - `pip install package` searches on pypi.python.org
+ - `pip install package/` from the folder
 
 
 
