@@ -6,7 +6,7 @@ What is pip?
 * **the** package manager for Python
 * "The PyPA recommended tool for installing Python packages"
 * comes with most distributions and Python 3.4+
-* [docs](http://www.pip-installer.org/en/latest/)
+* docs: http://www.pip-installer.org/en/latest/
 
 
 What can you do with pip?
@@ -81,7 +81,7 @@ your own package
 - only needs a setup.py which describes your package
 - compile C/C++ Extensions on installation time
 - deal with your dependencies
-- [see](https://docs.python.org/2/distutils/examples.html)
+- examples: https://docs.python.org/2/distutils/examples.html
 
 ### one file
 
@@ -96,9 +96,8 @@ from setuptools import setup
 
 setup(
     name="pypackage",
-    description="Test package for the pip presentation",
     py_modules=['pypackage'],
-    version='0.1.0', # major.minor.micro
+    version='0.1.0',
     )
 ```
 
@@ -117,11 +116,15 @@ from setuptools import setup
 
 setup(
     name="pypackage",
-    description="Test package for the pip presentation",
     packages=['pypackage'],
-    version='0.1.0', # major.minor.micro
+    version='0.1.0',
     )
 ```
+
+**Beware the 
+
+TODO dependencies
+TODO MANIFEST.in
 
 
 deployment with pip via git repositories
@@ -135,3 +138,4 @@ deployment with pip via git repositories
 links
 ----
 - http://xion.org.pl/2014/01/27/anathomy-of-a-python-package/
+- semantic versioning http://semver.org/
