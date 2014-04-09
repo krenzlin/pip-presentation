@@ -15,6 +15,7 @@ What can you do with pip?
 * `pip uninstall <package>`
 * `pip search <term or package>`
 * `pip install -U/--upgrade <package>`
+* `pip freeze` show installed packages
 * only pip 1.3+ `pip show <package>` 
 
 
