@@ -43,7 +43,6 @@ ways to install a package / pip is versatile
  - needs to be a tarball
 - `pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
 
-TODO: test if folder and tarball packages are always handled (like version controlling a tarball or having a folder on the http server)
 
 
 virtualenv
