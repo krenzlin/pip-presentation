@@ -83,10 +83,11 @@ your own package
 - deal with your dependencies
 - examples: https://docs.python.org/2/distutils/examples.html
 
-### one file
+one file
+----
 
     PackageFolder/
-        pypackage.py
+        foo.py
         setup.py
 
 setup.py
@@ -96,17 +97,31 @@ from setuptools import setup
 
 setup(
     name="pypackage",
-    py_modules=['pypackage'],
+    py_modules=['foo'],
     version='0.1.0',
     )
 ```
 
-### better
+#### pitfall
+```python
+import package
+```
+`ImportError`
+
+Installing is just a fancy copying of files. The name given in setup.py does not correspond with the import.
+
+```python
+import foo
+```
+`works`
+
+better
+----
 
     PackageFolder/
         pypackage/
             __init__.py
-            pypackage.py
+            foo.py
         setup.py
 
 setup.py
@@ -120,11 +135,46 @@ setup(
     version='0.1.0',
     )
 ```
+##### pitfall
 
-**Beware the 
 
-TODO dependencies
-TODO MANIFEST.in
+```python
+import pypackage
+
+pypackage.foo.hello()
+```
+`AttributeError`
+Solution 1:
+
+
+```python
+import pypackage.foo
+
+pypackage.foo.hello()
+```
+
+Solution 2
+
+in `package/__init__.py`
+
+```python
+import foo
+```
+or
+```python
+from foo import *
+```
+-> 
+```python
+import package
+
+package.hello()
+```
+
+
+- TODO dependencies
+- TODO MANIFEST.in
+
 
 
 deployment with pip via git repositories
