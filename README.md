@@ -74,18 +74,55 @@ virtualenv
 3. leave virtual environment
  - `deactivate`
 
+
 your own package
 ----
-- can be
- - single Python file 
- - Python module
- - Extension (C/C++)
- - Python and Shell scripts
-- only needs a setup.py which describes your package (name and modules to incorporate)
-- can compile C/C++ Extensions on installation time
+- can be anything importable by Python (eg.: single file scripts, libraries, C-Extensions)
+- only needs a setup.py which describes your package
+- compile C/C++ Extensions on installation time
 - deal with your dependencies
-- (see):https://docs.python.org/2/distutils/examples.html
-- 
+- [see](https://docs.python.org/2/distutils/examples.html)
+
+### one file
+
+    PackageFolder/
+        pypackage.py
+        setup.py
+
+setup.py
+
+```python
+from setuptools import setup
+
+setup(
+    name="pypackage",
+    description="Test package for the pip presentation",
+    py_modules=['pypackage'],
+    version='0.1.0', # major.minor.micro
+    )
+```
+
+### better
+
+    PackageFolder/
+        pypackage/
+            __init__.py
+            pypackage.py
+        setup.py
+
+setup.py
+
+```python
+from setuptools import setup
+
+setup(
+    name="pypackage",
+    description="Test package for the pip presentation",
+    packages=['pypackage'],
+    version='0.1.0', # major.minor.micro
+    )
+```
+
 
 deployment with pip via git repositories
 ----
