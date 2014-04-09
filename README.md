@@ -54,6 +54,7 @@ piftalls
 - when installing from a local folder keep in mind
  - `pip install package` searches on pypi.python.org
  - `pip install package/` from the folder
+- pip sometimes raises exception when package name is wrong or not found -> check your package name
 
 
 
