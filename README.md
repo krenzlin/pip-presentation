@@ -22,7 +22,7 @@ What can you do with pip?
 pip vs. apt-get
 ----
 - - no update notifications
-- - other non-python packages don't know about them 
+- - unknown to Debian 
 - - second package manager
 - + more packages available
 - + up-to-date packages
