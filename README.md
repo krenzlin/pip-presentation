@@ -36,9 +36,11 @@ ways to install a package / pip is versatile
 - `pip install <package>==<version>` install a specific version of the packages
  - **can conflict if newer version is/was installed** -> use `virtualenv`
 - `pip install <path/to/local/package>` installs a locally availabe Python package
-- needs to be a package (setup.py)
-- can be in a tarball
-- `pip install <package> -f <URL>` search on <URL> for a <package> tarball (supports versioning)
+ - needs to be a package (setup.py)
+ - can be tarball or folder
+- `pip install <package> -f <URL>` search on <URL> for a <package>
+ - supports versioning
+ - needs to be a tarball
 - `pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
 
 TODO: test if folder and tarball packages are always handled (like version controlling a tarball or having a folder on the http server)
