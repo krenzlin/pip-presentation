@@ -3,9 +3,9 @@ pip-presentation
 
 What is pip?
 ----
-* package manager for Python
+* **the** package manager for Python
 * "The PyPA recommended tool for installing Python packages"
-* comes with most distributions and from Python 3.4+
+* comes with most distributions and Python 3.4+
 * [docs](http://www.pip-installer.org/en/latest/)
 
 
@@ -30,18 +30,26 @@ pip vs. apt-get
 - + installs from various sources
 
 
-ways to install a package / pip is versatile
+ways to install a package
 ----
-- `pip install <package>` installs from pypi.python.org (most of the packages are there)
-- `pip install <package>==<version>` install a specific version of the packages
- - **can conflict if newer version is/was installed** -> use `virtualenv`
-- `pip install <path/to/local/package>` installs a locally availabe Python package
- - needs to be a package (setup.py)
- - can be tarball or folder
-- `pip install <package> -f <URL>` search on <URL> for a <package>
- - supports versioning
- - needs to be a tarball
-- `pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
+- `pip install packages` (default)
+ - searches on pypi.python.org
+- specify version of package
+ - `pip install package=0.2.1`
+ - `pip install package<=0.2.0`
+- install a tarballed package from elsewhere
+ - `pip install <path/to/tarball>` locally
+ - `pip install http://<URL>` via http(s)
+ - `pip install ssh://<URL>` .. or ssh
+- `pip install <package> -f <URL>` 
+ - search on \<URL\> for \<package\>
+ - supports versioning (e.g. `package-1.0.tar.gz`, `package-1.1.tar.gz`)
+
+
+problems
+----
+- specifying version can conflict if **newer** version is/was installed -> use `virtualenv`
+- installing w/ tarballs only checks if version != installed_version -> can **downgrade**
 
 
 
@@ -68,6 +76,7 @@ your own package
 
 deployment with pip via git repositories
 ----
+- `pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
 - TODO
 - TODO: install from git via ssh,
 - TODO: via local repo - pip install git+file://test needs to have the folder, branches like repo@develop ??
