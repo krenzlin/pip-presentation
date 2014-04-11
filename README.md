@@ -73,7 +73,7 @@ virtualenv
  - `deactivate`
 
 
-your own package
+your own installable package
 ----
 - can be anything importable by Python (eg.: single file scripts, libraries, C-Extensions)
 - only needs a setup.py which describes your package
