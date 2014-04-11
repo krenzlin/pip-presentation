@@ -181,9 +181,13 @@ make tarball
 deployment with pip via git repositories
 ----
 - `pip install git+https://github.com/krenzlin/package.git`
-- `pip install git+https://github.com/krenzlin/package.git#egg=pypackage`
-- `pip install git+https://github.com/krenzlin/package.git@ba7359f35ebf43e0a052ef3ca2a92826ece57675` specify version (commit)
-- branches ?
+- better use `pip install git+https://github.com/krenzlin/package.git#egg=pypackage`
+- you can specify version by
+ - commit `pip install git+https://github.com/krenzlin/package.git@ba7359f35ebf43e0a052ef3ca2a92826ece57675#egg=pypackage` 
+ - branch `pip install git+https://github.com/krenzlin/package.git@feature#egg=pypackage#egg=pypackage`
+ - tag
+- develop mode 
+ - `pip install -e git+https://github.com/krenzlin/package.git@feature#egg=pypackage#egg=pypackage`
 
 
 links
