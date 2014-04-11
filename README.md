@@ -145,6 +145,7 @@ import pypackage
 pypackage.foo.hello()
 ```
 `AttributeError`
+
 Solution 1:
 
 
