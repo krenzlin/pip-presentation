@@ -182,7 +182,8 @@ deployment with pip via git repositories
 ----
 - `pip install git+https://github.com/krenzlin/package.git`
 - `pip install git+https://github.com/krenzlin/package.git#egg=pypackage`
-- `pip install git+https://github.com/krenzlin/package.git@ba7359f35ebf43e0a052ef3ca2a92826ece57675`
+- `pip install git+https://github.com/krenzlin/package.git@ba7359f35ebf43e0a052ef3ca2a92826ece57675` specify version (commit)
+- branches ?
 
 
 links
