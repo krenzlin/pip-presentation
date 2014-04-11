@@ -4,7 +4,6 @@ pip-presentation
 What is pip?
 ----
 * **the** package manager for Python
-* "The PyPA recommended tool for installing Python packages"
 * comes with most distributions and Python 3.4+
 * docs: http://www.pip-installer.org/en/latest/
 
@@ -22,11 +21,9 @@ What can you do with pip?
 pip vs. apt-get
 ----
 - - no update notifications
-- - unknown to Debian 
-- - second package manager
-- + more packages available
 - + up-to-date packages
 - + easy to create and install your own packages (unlike a Debian package)
+- + more packages available
 - + make develope installation (softlink to the sources instead of copying)
 - + installs from various sources
 
@@ -102,6 +99,9 @@ setup(
     )
 ```
 
+##### install
+`pip install pypackage/`
+
 #### pitfall
 ```python
 import package
@@ -171,18 +171,17 @@ import package
 package.hello()
 ```
 
-
-- TODO dependencies
-- TODO MANIFEST.in
+make tarball
+----
+`python setup.py sdist`
 
 
 
 deployment with pip via git repositories
 ----
-- `pip install git+https://github.com/noamraph/tqdm.git#egg=tqdm` install tqdm directly from GitHub
-- TODO
-- TODO: install from git via ssh,
-- TODO: via local repo - pip install git+file://test needs to have the folder, branches like repo@develop ??
+- `pip install git+https://github.com/krenzlin/package.git`
+- `pip install git+https://github.com/krenzlin/package.git#egg=pypackage`
+- `pip install git+https://github.com/krenzlin/package.git@ba7359f35ebf43e0a052ef3ca2a92826ece57675`
 
 
 links
