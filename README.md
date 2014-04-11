@@ -64,6 +64,7 @@ virtualenv
 - create test environments
 - no need for sudo
 
+
 1. create new virtual environment 
  - `virtualenv <path/for/env>`
 2. activate virtual environment (do not forget!!)
